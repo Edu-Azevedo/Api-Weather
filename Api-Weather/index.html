@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Previssão do Tempo</title>
+</head>
+<body>
+    <div class="organizador">
+        <div class="card">
+            <div class="pesquisa">
+                <input type="text" placeholder="Digite o Nome da Cidade" spellcheck="false">
+                <button class="btn-pesquisa"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+            <div class="error">
+                <p>Cidade Invalida</p>
+            </div>
+            <div class="weather">
+                <img class="weather-icon my-3" src="img/chuva.png" alt="">
+                <h1 class="tempo mb-1"></h1>
+                <h2 class="cidade"></h2>
+                <div class="detalhes">
+                    <div class="coluna">
+                        <img src="img/umidade.png" alt="">
+                        <div class="text-detalhes">
+                            <p class="p-umidade"></p>
+                            <p>Umidade</p>
+                        </div>
+                    </div>
+                    <div class="coluna">
+                        <img src="img/ventania.png" alt="">
+                        <div class="text-detalhes">
+                            <p class="p-ventania"></p>
+                            <p>Vento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="title-btn">Troque as medidas de Temperatura</h5>
+        <button class="btn-filtro"><ion-icon name="swap-horizontal-outline"></ion-icon></button>
+    </div>
+    <script src="js/app.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+</body>
+</html>
